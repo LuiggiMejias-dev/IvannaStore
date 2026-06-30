@@ -1,9 +1,9 @@
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero'; 
-import About from './components/About/About';
-import Tienda from './components/Tienda/Tienda'; // 1. Importa el componente
-import Contact from './components/Contact/Contact'; 
-import Footer from './components/Footer/Footer';
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero'; 
+import About from './Components/About/About';
+import Tienda from './Components/Tienda/Tienda'; 
+import Contact from './Components/Contact/Contact'; 
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
