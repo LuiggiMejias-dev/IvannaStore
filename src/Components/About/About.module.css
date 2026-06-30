@@ -1,0 +1,56 @@
+.aboutSection {
+    padding-top: 60px; /* Esto da aire desde arriba */
+    padding-bottom: 80px;
+    background-color: var(--color-fondo);
+}
+.aboutContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* Alineación vertical central */
+  gap: 50px;
+}
+
+.aboutContent h2 {
+  font-family: var(--font-principal);
+  font-size: 3rem;
+  color: var(--color-texto);
+  margin-bottom: 25px;
+  /* Mantenemos el título alineado a la izquierda */
+  text-align: left; 
+}
+
+.aboutContent p {
+  /* CAMBIO: Usamos la fuente de cuerpo pero con un estilo más refinado */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.8; /* MÁS AIRE: Esto hace que el texto sea mucho más cómodo de leer */
+  color: #4A403A;
+  margin-bottom: 20px;
+  text-align: justify; /* JUSTIFICADO: Hace que el bloque de texto se vea como un rectángulo perfecto */
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .aboutContent h2 {
+    text-align: center; /* En móvil centramos todo para que se vea mejor */
+  }
+
+  .aboutContent p {
+    text-align: center; /* En móvil el texto centrado es más natural */
+  }
+}
+
+.paragraph {
+  /* Forzamos el cambio con !important */
+  font-family: 'Georgia', serif !important; 
+  font-size: 1.2rem !important;
+  color: #5D5550 !important; /* Un tono apenas diferente para probar */
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}

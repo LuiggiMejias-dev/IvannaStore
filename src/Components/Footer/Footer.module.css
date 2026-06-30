@@ -1,0 +1,69 @@
+.footer {
+  /* Usamos la variable global definida en App.css */
+  background-color: var(--color-footer); 
+  color: #F4EBD9; 
+  padding: 40px 50px;
+  text-align: center;
+  
+  /* NUEVO: Aplicamos una fuente con estilo serif elegante */
+  font-family: 'Lora', serif;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  
+  border-top: none; 
+  margin-top: 0;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.socialLinks {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: #F4EBD9; 
+  font-weight: 500;
+  font-family: var(--font-cuerpo); /* Mantenemos la sans-serif aquí para mejor legibilidad */
+  font-style: normal;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  text-transform: uppercase; /* Le da un aire más sofisticado */
+}
+
+.socialLinks a:hover {
+  color: var(--color-tarjeta); 
+  letter-spacing: 2px; /* Efecto sutil de expansión al pasar el mouse */
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .socialLinks {
+    gap: 15px;
+  }
+}
+
+.credit {
+  font-size: 0.75rem; /* Tamaño más pequeño para que sea sutil */
+  margin-top: 20px;   /* Mayor espacio hacia arriba */
+  margin-bottom: 20px; /* Mayor espacio hacia abajo */
+  opacity: 0.6;       /* Un poco más transparente */
+  font-style: italic; /* Le da un toque más elegante y menos invasivo */
+}
+
+.credit a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.3); /* Línea muy sutil */
+}

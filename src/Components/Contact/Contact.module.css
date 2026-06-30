@@ -1,0 +1,36 @@
+.contactSection {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--color-fondo);
+}
+
+.contactSection h2 {
+  font-size: 3rem;
+  color: var(--color-texto);
+  margin-bottom: 20px;
+}
+
+.contactOptions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btnWhatsApp, .btnEmail {
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btnWhatsApp {
+  background-color: #25d366; /* Verde WhatsApp */
+  color: white;
+}
+
+.btnEmail {
+  background-color: var(--color-tarjeta);
+  color: #4A403A;
+}

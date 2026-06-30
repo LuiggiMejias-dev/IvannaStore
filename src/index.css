@@ -1,0 +1,59 @@
+/* Variables de diseño */
+:root {
+    --color-fondo: #FFF9F7;
+    --color-primario: #FFD1DC; /* Rosa pastel */
+    --color-secundario: #B2F2BB; /* Menta pastel */
+    --color-texto: #5C524E;
+    --color-tarjeta: #FFE5D9;
+}
+
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-primario);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-weight: bold; font-size: 1.5rem; }
+
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { text-decoration: none; color: var(--color-texto); font-weight: 500; }
+
+.hero { text-align: center; padding: 60px 20px; }
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta-producto {
+    background-color: var(--color-tarjeta);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+button {
+    background-color: var(--color-secundario);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
